@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Radio+Canada&family=Ubuntu:wght@500&display=swap");
+body {
+  background-color: #a0daa9;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.keyBoardBlock {
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.firstRow,
+.secondRow,
+.thirdRow,
+.fourthRow,
+.fifthRow {
+  width: 750px;
+  /* background-color: #bcbfc6; */
+  background-color: #939597;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+.default-btn {
+  width: 45px;
+  height: 45px;
+  background-color: #485167;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select: none;
+  outline: none;
+}
+.default-btn:hover {
+  background-color: #969fb6;
+}
+.rare-btn:hover {
+  background-color: #5a5f72;
+}
+.rare-btn {
+  border: none;
+  background-color: #363945;
+  border-radius: 5px;
+  height: 45px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select: none;
+  outline: none;
+}
+.caps,
+.rarePressed {
+  transform: scale(0.9);
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+    rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  background-color: #70768f;
+}
+.defaultPressed {
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 2px,
+    rgba(0, 0, 0, 0.65) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 1px 0px inset;
+  background-color: #a5adc0;
+}
+.firstRow .rare-btn {
+  width: 100px;
+}
+.secondRow .rare-btn {
+  width: 50px;
+}
+.thirdRow .rare-btn:first-child {
+  width: 100px;
+}
+.thirdRow .rare-btn:last-child {
+  width: 90px;
+}
+.fourthRow .rare-btn:first-child,
+.fourthRow .rare-btn:last-child {
+  width: 122px;
+}
+.fourthRow .rare-btn {
+  width: 45px;
+}
+.fifthRow .rare-btn {
+  width: 45px;
+}
+.fifthRow .space-btn {
+  width: 350px;
+}
+.fifthRow .rare-btn:first-child,.fifthRow .rare-btn:last-child{
+  width: 72px;
+}
+textarea {
+  background-color: #efc050;
+  border-radius: 10px;
+  width: 750px;
+  height: 200px;
+  overflow-y: auto;
+  font-family: "Radio Canada", sans-serif;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  color: black;
+}
+.about {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  color: #343148;
+}
